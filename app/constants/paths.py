@@ -1,0 +1,5 @@
+PATH_DIR_RPA = "c:/RPA"
+PATH_DIR_LOGS = "/Logs"
+PATH_DIR_INPUT = "/Input"
+PATH_DIR_EVIDENCE = "/Logs"
+PATH_DIR_OUTPUTS = "/Outputs"
