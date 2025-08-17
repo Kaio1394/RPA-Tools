@@ -8,15 +8,27 @@ class FileUtils:
     
     def dir_rpa_exists(self) -> bool:
         return os.path.exists(self.path_rpa)
-    
-    def create_rpa_dir(self):
-        os.mkdir(self.path_rpa)
         
     def dir_project_exists(self):
         return os.path.exists(self.base_dir)
     
-    def create_log_dir(self):
-        os.mkdir(os.path.join(self.base_dir, PATH_DIR_LOGS))
+    def create_rpa_dir(self) -> bool:
+        try:
+            os.mkdir(self.path_rpa)
+            return True
+        except Exception as err:
+            return False
+    
+    def create_log_dir(self) -> bool:
+        try:
+            os.mkdir(os.path.join(self.base_dir, PATH_DIR_LOGS))
+            return True
+        except Exception as err:
+            return False
         
-    def create_evidence_dir(self):
-        os.mkdir(os.path.join(self.base_dir, PATH_DIR_EVIDENCE))
+    def create_evidence_dir(self) -> bool:
+        try:
+            os.mkdir(os.path.join(self.base_dir, PATH_DIR_EVIDENCE))
+            return True
+        except Exception as err:
+            return False
