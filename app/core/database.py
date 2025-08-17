@@ -7,7 +7,7 @@ sqlite_url = f"sqlite:///{sqlite_filename}"
 engine = create_engine(sqlite_url, echo=True)
 
 def init_db():
-    # from models import Category
+    from models import Bot, HistoryExecution
     SQLModel.metadata.create_all(engine)
 
 def get_session():
