@@ -19,10 +19,9 @@ This is a **FastAPI-based backend** designed to assist with:
 ## 🚀 Tech Stack
 
 - **FastAPI** — High-performance web framework
-- **Pydantic** — For data validation and serialization
 - **SQLAlchemy** — ORM for database models
 - **Alembic** — For migrations
-- **PostgreSQL** (or any SQL database)
+- **Sqlite** (or any SQL database)
 - **Uvicorn** — ASGI server
 
 ---
